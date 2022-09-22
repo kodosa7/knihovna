@@ -1,0 +1,178 @@
+[
+  {
+    "model": "knihovna.Author",
+    "pk": 1,
+    "fields": {
+      "authorName": "Joanne K. Rowling",
+      "authorDetail": "Joanne Rowling (born 31 July 1965), better known by her pen name J. K. Rowling, is a British author, film producer, television producer, screenwriter, and philanthropist. She is best known for writing the Harry Potter fantasy series, which has won multiple awards and sold more than 500 million copies, becoming the best-selling book series in history. The books are the basis of a popular film series, over which Rowling had overall approval on the scripts and was a producer on the final films. She also writes crime fiction under the name Robert Galbraith."
+    }
+  },
+  {
+    "model": "knihovna.Author",
+    "pk": 2,
+    "fields": {
+      "authorName": "Haruki Murakami",
+      "authorDetail": "Haruki Murakami (Murakami Haruki, born January 12, 1949) is a Japanese writer. His books and stories have been bestsellers in Japan as well as internationally, with his work being translated into 50 languages and selling millions of copies outside his native country. His work has received numerous awards, including the World Fantasy Award, the Frank O'Connor International Short Story Award, the Franz Kafka Prize, and the Jerusalem Prize."
+    }
+  },
+  {
+    "model": "knihovna.Author",
+    "pk": 3,
+    "fields": {
+      "authorName": "Lucy Maud Montgomery",
+      "authorDetail": "Lucy Maud Montgomery OBE (November 30, 1874 – April 24, 1942), published as L. M. Montgomery, was a Canadian author best known for a series of novels beginning in 1908 with Anne of Green Gables. The book was an immediate success. Anne Shirley, an orphaned girl, made Montgomery famous in her lifetime and gave her an international following."
+    }
+  },
+  {
+    "model": "knihovna.Author",
+    "pk": 4,
+    "fields": {
+      "authorName": "Hanya Yanagihara",
+      "authorDetail": "Hanya Yanagihara (born September 20, 1974) is an American novelist, editor, and travel writer. She grew up in Hawaii."
+    }
+  },
+
+  {
+    "model": "knihovna.Book",
+    "pk": 1,
+    "fields": {
+      "bookName": "Harry Potter And The Philosopher's Stone",
+      "bookYear": "1997-06-26",
+      "bookDetail": "Harry Potter and the Philosopher's Stone is a fantasy novel written by British author J. K. Rowling. The first novel in the Harry Potter series and Rowling's debut novel, it follows Harry Potter, a young wizard who discovers his magical heritage on his eleventh birthday, when he receives a letter of acceptance to Hogwarts School of Witchcraft and Wizardry.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate":  null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 2,
+    "fields": {
+      "bookName": "Norwegian Wood",
+      "bookYear": "1987-01-01",
+      "bookDetail": "Norwegian Wood is a 1987 novel by Japanese author Haruki Murakami. The novel is a nostalgic story of loss and burgeoning sexuality. It is told from the first-person perspective of Toru Watanabe, who looks back on his days as a college student living in Tokyo.",
+      "bookWriter": 2,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 3,
+    "fields": {
+      "bookName": "Harry Potter and the Chamber of Secrets",
+      "bookYear": "1998-07-02",
+      "bookDetail": "Harry Potter and the Chamber of Secrets is a fantasy novel written by British author J. K. Rowling and the second novel in the Harry Potter series. The plot follows Harry's second year at Hogwarts School of Witchcraft and Wizardry, during which a series of messages on the walls of the school's corridors warn that the \"Chamber of Secrets\" has been opened and that the \"heir of Slytherin\" would kill all pupils who do not come from all-magical families.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 4,
+    "fields": {
+      "bookName": "Harry Potter and the Prisoner of Azkaban",
+      "bookYear": "1999-07-08",
+      "bookDetail": "Harry Potter and the Prisoner of Azkaban is a fantasy novel written by British author J.K. Rowling and is the third in the Harry Potter series. The book follows Harry Potter, a young wizard, in his third year at Hogwarts School of Witchcraft and Wizardry. Along with friends Ronald Weasley and Hermione Granger, Harry investigates Sirius Black, an escaped prisoner from Azkaban, a wizard prison in the north sea, who they believe is one of Lord Voldemort's old allies.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 5,
+    "fields": {
+      "bookName": "Harry Potter and the Goblet of Fire",
+      "bookYear": "2000-07-08",
+      "bookDetail": "Harry Potter and the Goblet of Fire is a fantasy book written by British author J. K. Rowling and the fourth novel in the Harry Potter series. It follows Harry Potter, a wizard in his fourth year at Hogwarts School of Witchcraft and Wizardry, and the mystery surrounding the entry of Harry's name into the Triwizard Tournament, in which he is forced to compete.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 6,
+    "fields": {
+      "bookName": "Harry Potter and the Order of the Phoenix",
+      "bookYear": "2003-07-23",
+      "bookDetail": "Harry Potter and the Order of the Phoenix is a fantasy novel written by British author J. K. Rowling and the fifth novel in the Harry Potter series. It follows Harry Potter's struggles through his fifth year at Hogwarts School of Witchcraft and Wizardry, including the surreptitious return of the antagonist Lord Voldemort, O.W.L. exams, and an obstructive Ministry of Magic.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 7,
+    "fields": {
+      "bookName": "Harry Potter and the Half-Blood Prince",
+      "bookYear": "2005-07-16",
+      "bookDetail": "Harry Potter and the Half-Blood Prince is a fantasy novel written by British author J.K. Rowling and the sixth and penultimate novel in the Harry Potter series. Set during Harry Potter's sixth year at Hogwarts, the novel explores the past of Harry's nemesis, Lord Voldemort, and Harry's preparations for the final battle against Voldemort alongside his headmaster and mentor Albus Dumbledore.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 8,
+    "fields": {
+      "bookName": "Harry Potter and the Deathly Hallows",
+      "bookYear": "2007-07-21",
+      "bookDetail": "Harry Potter and the Deathly Hallows is a fantasy novel written by British author J. K. Rowling and the seventh and final novel of the Harry Potter series. It was released on 21 July 2007 in the United Kingdom by Bloomsbury Publishing, in the United States by Scholastic, and in Canada by Raincoast Books. The novel chronicles the events directly following Harry Potter and the Half-Blood Prince (2005) and the final confrontation between the wizards Harry Potter and Lord Voldemort.",
+      "bookWriter": 1,
+      "borrowedBy": "",
+      "borrowedDate": null,
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 9,
+    "fields": {
+      "bookName": "Anne of Green Gables",
+      "bookYear": "1908-01-01",
+      "bookDetail": "Anne of Green Gables is a 1908 novel by Canadian author Lucy Maud Montgomery (published as L.M. Montgomery). Written for all ages, it has been considered a classic children's novel since the mid-twentieth century. Set in the late 19th century, the novel recounts the adventures of Anne Shirley, an 11-year-old orphan girl, who is mistakenly sent to two middle-aged siblings, Matthew and Marilla Cuthbert, who had originally intended to adopt a boy to help them on their farm in the fictional town of",
+      "bookWriter": 3,
+      "borrowedBy": "Jistý Štěpán",
+      "borrowedDate": "2020-01-30",
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 10,
+    "fields": {
+      "bookName": "Lethal White",
+      "bookYear": "2018-04-01",
+      "bookDetail": "Lethal White is preceded by The Cuckoo's Calling, The Silkworm, and Career of Evil; there are tentative plans to follow it with at least five more stories.Rowling announced completion of the manuscript on 23 March 2018, after approximately two years of writing.The book was released on 18 September 2018. The book follows the private detective Cormoran Strike and his partner Robin Ellacott and is the longest in the series thus far.",
+      "bookWriter": 1,
+      "borrowedBy": "Facír Jonáš",
+      "borrowedDate": "2020-01-09",
+      "returnDate": null
+    }
+  },
+  {
+    "model": "knihovna.Book",
+    "pk": 11,
+    "fields": {
+      "bookName": "A Little Life",
+      "bookYear": "2015-03-15",
+      "bookDetail": "A Little Life is a 2015 novel by American novelist Hanya Yanagihara. The novel was written over the course of eighteen months. Despite the length and difficult subject matter it became a bestseller.",
+      "bookWriter": 4,
+      "borrowedBy": "Alexandra Bečková",
+      "borrowedDate": "2019-11-27",
+      "returnDate": "2020-01-31"
+    }
+  }
+]

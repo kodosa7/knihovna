@@ -1,0 +1,8 @@
+{% extends 'main.html' %}
+  {% block content %}
+    <h2>List of authors</h2>
+    {% for author in authors %}
+      <a href='{{ author.getAuthorUrl }}'>{{ author.authorName }}</a>
+      <br>
+    {% endfor %}
+  {% endblock %}

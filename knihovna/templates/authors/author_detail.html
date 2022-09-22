@@ -1,0 +1,14 @@
+{% extends 'main.html' %}
+{% block content %}
+  <h2>Author detail</h2>
+  <p>
+    <table>
+      <tr>
+        <td class="table-col-1">Author's Name</td><td class="table-col-2">{{ author.authorName }}</td>
+      </tr>
+      <tr>
+        <td class="table-col-1">Detail</td><td class="table-col-2">{{ author.authorDetail }}</td>
+      </tr>
+    </table>
+  </p>
+{% endblock %}

@@ -1,0 +1,49 @@
+{% extends 'main.html' %}
+{% block content %}
+<h2>Book detail</h2>
+<p>
+  <table>
+    <tr>
+      <td class="table-col-1">Name</td><td class="table-col-2"><strong>{{ book.bookName }}</strong></td>
+    </tr>
+    <tr>
+      <td class="table-col-1">Author</td><td class="table-col-2">{{ book.bookWriter }}</td>
+    </tr>
+    <tr>
+      <td class="table-col-1">Date released</td><td class="table-col-2">{{ book.bookYear }}</td>
+    </tr>
+    <tr>
+      <td class="table-col-1">Description</td><td class="table-col-2">{{ book.bookDetail }}</td>
+    </tr>
+  </table>
+</p>
+<h2>Status</h2>
+{% if book.borrowedDate == None %}
+  <p>
+    The book is currently in the library (not borrowed)
+  </p>
+{% else %}
+<p>
+  <table>
+    <tr>
+      <td class="table-col-3">Borrowed by</td><td class="table-col-2">{{ book.borrowedBy }}</td>
+    </tr>
+    <tr>
+      <td class="table-col-3">Date borrowed</td><td class="table-col-2">{{ book.borrowedDate }}</td>
+    </tr>
+    <tr>
+      <td class="table-col-3">Will return on</td>
+      {% if book.returnDate != None %}
+        <td class="table-col-2">
+          {{ book.returnDate }}
+        </td>
+      {% else %}
+        <td class="table-col-2">
+          unknown
+        </td>
+      {% endif %}
+    </tr>
+  </table>
+</p>
+{% endif %}
+{% endblock %}

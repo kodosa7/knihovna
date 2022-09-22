@@ -1,0 +1,21 @@
+{% extends 'main.html' %}
+{% block content %}
+  <div class="page-welcome">
+    <div class="page-welcome-image">
+      <img src="/static/images/books-clipart.png">
+    </div>
+    <h2>Welcome to My Library</h2>
+    <div class="page-welcome-description">
+      <p>
+        This is my solution for the project of a simple library, which has basic functionality such as searching for books and keeping records of borrowed books. The Python / Django code itself has been done in about two days. It's my first real Django project.
+      </p>
+      <br>
+    </div>
+    <div class="search-button">
+      <form action="search" method='GET'>
+        <input width="100%" name='query' value='{{ request.GET.q }}' placeholder='Search for a book...'>
+        <button type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+{% endblock %}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+{% load static %}
+<!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous"> -->
+<html>
+
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css?family=Catamaran|Henny+Penny|Ropa+Sans&display=swap" rel="stylesheet">
+  </head>
+
+  <header class="header">
+    <div class="page-header">
+      <h1><a href="/">My Library</a></h1>
+    <div>
+
+    <div class="nav-bar">
+      {% include 'navigation_bar.html' %}
+    </div>
+  </header>
+  <body class="body">
+    <div class="page-middle-box">
+      <div class="page-main">
+      {% block content %}
+      {% endblock %}
+      </div>
+    </div>
+  </body>
+  <footer>
+    <p>
+      My Library version 1.0 | Built on <a href="https://www.python.org/"><img src="/static/images/python-logo.png" width="75px" style="vertical-align:middle"></a> and <a href="https://www.djangoproject.com/"><img src="/static/images/django-logo.png" width="55px" style="vertical-align:middle"></a> | Powered by <a href="https://www.postgresql.org/"><img src="/static/images/postgres-logo.png" width="75px" style="vertical-align:middle"></a>
+    </p>
+  </footer>
+  <br>
+</html>
